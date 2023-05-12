@@ -1,0 +1,143 @@
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 576px;
+  overflow: hidden;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 0;
+  color: #fff;
+  border-radius: 10px;
+  height: auto;
+}
+.main h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 3rem;
+}
+.main p {
+  font-family: "Lexend Deca", sans-serif;
+  padding-right: 6rem;
+  opacity: 0.8;
+}
+.sec-1,
+.sec-2,
+.sec-3 {
+  width: 90%;
+  height: auto;
+  padding: 30px 0;
+}
+.sec-1 {
+  background-color: var(--Bright-orange);
+  border-radius: 10px 10px 0 0;
+}
+.sec-2 {
+  background-color: var(--Dark-cyan);
+}
+.sec-3 {
+  background-color: var(--Very-dark-cyan);
+  border-radius: 0 0 10px 10px;
+}
+.sec-1 img,
+.sec-1 h1,
+.sec-1 p,
+.sec-1 .btn,
+.sec-2 img,
+.sec-2 h1,
+.sec-2 p,
+.sec-2 .btn,
+.sec-3 img,
+.sec-3 h1,
+.sec-3 p,
+.sec-3 .btn {
+  margin: 2rem 0 0.5rem 2rem;
+}
+.btn {
+  width: 10rem;
+  height: 2.8rem;
+  border: none;
+  border-radius: 30px;
+  background-color: #fff;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 700;
+}
+.btn1:hover {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+}
+.btn2:hover {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+}
+.btn3:hover {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+}
+.btn1 {
+  color: var(--Bright-orange);
+}
+.btn2 {
+  color: var(--Dark-cyan);
+}
+.btn3 {
+  color: var(--Very-dark-cyan);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 30px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 576px) {
+  body {
+    max-width: 1440px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .main {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 400px;
+    margin: 9rem 0 0 12rem;
+  }
+  .main p {
+    font-family: "Lexend Deca", sans-serif;
+    padding-right: 1rem;
+  }
+  .sec-1,
+  .sec-2,
+  .sec-3 {
+    width: none;
+    padding-bottom: 30px;
+    height: none;
+  }
+  .sec-1 {
+    border-radius: 10px 0 0 10px;
+  }
+  .sec-3 {
+    border-radius: 0 10px 10px 0;
+  }
+}
